@@ -104,12 +104,12 @@ def sync_project():
                         if title in existing_tasks:
                             task = existing_tasks[title]
                             # print(f"Task already exists: {task['title']} (taskId: {task['taskId']})")
-                            task['file'] = file_path
+                            task['file_path'] = file_path
                         else:
                             # 新しいタスクとして追加
                             task_counter += 1
                             task_data['taskId'] = task_counter
-                            task_data['file'] = file_path  # ファイルパスを格納
+                            task_data['file_path'] = file_path  # ファイルパスを格納
                             new_tasks.append(task_data)
                             # print(f"New task added: {task_data['title']} (taskId: {task_data['taskId']})")
 
@@ -164,7 +164,7 @@ def list_tasks():
             }.get(task['status'], Fore.WHITE)  # デフォルトは白
 
             # ディレクトリ名の抽出
-            directory_name = os.path.basename(os.path.dirname(task['file']))
+            directory_name = os.path.basename(os.path.dirname(task['file_path']))
 
             # タスクの出力
             print(

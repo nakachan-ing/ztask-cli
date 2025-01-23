@@ -67,11 +67,11 @@ tags:
 1. 仮想環境の作成
    プロジェクトディレクトリに移動し、仮想環境を作成します：
    ```bash
-   python3 -m venv ztask-env
+   python3 -m venv venv
    ```
 2. 仮想環境の有効化
     ```bash
-    source ztask-env/bin/activate
+    source venv/bin/activate
     ```
 3. 依存パッケージをインストールするための `requirements.txt` を作成します：
     ```bash

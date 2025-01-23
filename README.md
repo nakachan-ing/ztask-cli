@@ -58,6 +58,30 @@ tags:
     sudo apt install python3
     ```
 
+   ```
+
+### ztask-cliのダウンロード
+最新の安定版をデスクトップまたはサーバーにダウンロードしてください。
+
+#### MacOS
+
+1. リポジトリをクローンします：
+    ```bash
+    git clone https://github.com/nakachan-ing/ztask-cil.git
+    ```
+
+2. `ztask-cil` のパスを環境変数に追加します（`zsh` を使用している場合）：
+    ```bash
+    echo 'export PATH="$HOME/path/to/ztask-cil:$PATH"' >> ~/.zshrc  # zshの場合
+    ```
+
+3. 設定を反映させるために、以下のコマンドで `zshrc` を再読み込みします：
+    ```bash
+    source ~/.zshrc
+    ```
+
+これで、`ztask` コマンドがターミナルで使用できるようになります。
+
 ### Pythonの仮想環境の設定
 
 `ztask-cil` を仮想環境で使用する場合は、以下の手順を実行して仮想環境を作成し、必要なパッケージをインストールします。
@@ -87,29 +111,6 @@ tags:
    作業が終わったら仮想環境を無効化します
    ```bash
    deactivate
-   ```
-
-### ztask-cliのダウンロード
-最新の安定版をデスクトップまたはサーバーにダウンロードしてください。
-
-#### MacOS
-
-1. リポジトリをクローンします：
-    ```bash
-    git clone https://github.com/nakachan-ing/ztask-cil.git
-    ```
-
-2. `ztask-cil` のパスを環境変数に追加します（`zsh` を使用している場合）：
-    ```bash
-    echo 'export PATH="$HOME/path/to/ztask-cil:$PATH"' >> ~/.zshrc  # zshの場合
-    ```
-
-3. 設定を反映させるために、以下のコマンドで `zshrc` を再読み込みします：
-    ```bash
-    source ~/.zshrc
-    ```
-
-これで、`ztask` コマンドがターミナルで使用できるようになります。
 
 ## 設定ファイル
 

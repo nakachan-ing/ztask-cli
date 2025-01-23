@@ -62,10 +62,9 @@ def sync_project():
         return
 
     # 既存のtasks.jsonをロード
-    tasks_file = "tasks.json"
     existing_tasks = {}
-    if os.path.exists(tasks_file):
-        with open(tasks_file, 'r', encoding='utf-8') as f:
+    if os.path.exists(task_json):
+        with open(task_json, 'r', encoding='utf-8') as f:
             try:
                 existing_tasks = {task['title']: task for task in json.load(f)}
             except json.JSONDecodeError:

@@ -101,7 +101,7 @@ tags:
 
 2. `ztask-cil` のパスを環境変数に追加します（`zsh` を使用している場合）：
     ```bash
-    echo 'export PATH="$HOME/path/to/ztask-cil/ztask:$PATH"' >> ~/.zshrc  # zshの場合
+    echo 'export PATH="$HOME/path/to/ztask-cil:$PATH"' >> ~/.zshrc  # zshの場合
     ```
 
 3. 設定を反映させるために、以下のコマンドで `zshrc` を再読み込みします：

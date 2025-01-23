@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# スクリプトがあるディレクトリのパスを取得
+SCRIPT_DIR=$(dirname "$(realpath "$0")")
+
+# ztask.pyのパスを組み合わせて指定
+SCRIPT_PATH="$SCRIPT_DIR/ztask.py"
+
+# Pythonスクリプトを呼び出し、引数をそのまま渡す
+python3 "$SCRIPT_PATH" "$@"
